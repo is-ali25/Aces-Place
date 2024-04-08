@@ -107,17 +107,19 @@ lucky.addEventListener("click", () => {
   goingOut.innerHTML =
     godActivities[Math.floor(Math.random() * 100) % godActivities.length];
 
-  timeToKneel();
+  gettingLucky();
   lucky.style.display = "none";
   bar.style.display = "none";
-  or.style.display = "none";
+  or.style.width = "60vw";
+  or.style.top = "60vh";
+  or.style.color = "tomato";
+  or.innerHTML = "NOW LISTEN TO YOUR GOD! YOU HAVE 7 DAYS OR I WILL SMITE THEE";
 });
 
 const goForth = () => {
   kneel.textContent = "NOW GO FORTH AND...";
 };
 
-const timeToKneel = () => {
-  kneel.textContent =
-    "LISTEN TO YOUR GOD! YOU HAVE 7 DAYS OR I WILL SMITE THEE";
+const gettingLucky = () => {
+  kneel.textContent = "Weekend Getaway In...";
 };
