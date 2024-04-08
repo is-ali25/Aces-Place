@@ -45,7 +45,19 @@ const bigSpenderActivities = [
   "find a sex shop (be ready to play with your new toys xD)",
 ];
 
-const godActivities = ["KNEEL", "KNEEL!!", "YOU WILL KNEEL BEFORE THE HORDE!"];
+const godActivities = [
+  "New Hampshire",
+  "New York",
+  "Maine",
+  "Vermont",
+  "Pennsylvania",
+  "Washington D.C.",
+  "Virginia",
+  "Maryland",
+  "North Carolina",
+  "South Carolina",
+  "Georgia",
+];
 
 /*TODO:
   add GOD button that when clicked outputs a random location
@@ -106,5 +118,6 @@ const goForth = () => {
 };
 
 const timeToKneel = () => {
-  kneel.textContent = "LISTEN TO YOUR GOD!";
+  kneel.textContent =
+    "LISTEN TO YOUR GOD! YOU HAVE 7 DAYS OR I WILL SMITE THEE";
 };
