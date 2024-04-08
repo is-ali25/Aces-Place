@@ -1,0 +1,165 @@
+body {
+  /* background-color: pink; */
+
+  background: rgb(241, 255, 4);
+  background: radial-gradient(
+    circle,
+    rgba(241, 255, 4, 1) 0%,
+    rgba(238, 12, 214, 1) 85%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+
+  overflow: hidden;
+  font-size: 3rem;
+}
+
+pre {
+  text-align: center;
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  width: 50%;
+  height: 80%;
+  margin: 2rem;
+  padding: 1rem;
+  border: solid 4px black;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+}
+
+h2 {
+  background-color: azure;
+  width: 100vw;
+  text-align: center;
+  opacity: 80%;
+  font-size: 4rem;
+}
+
+#kneel {
+  position: absolute;
+  left: 0vw;
+}
+
+#bar {
+  display: none;
+  background-color: black;
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  top: 47vh;
+  width: 50vw;
+  height: 0.7vh;
+
+  animation: fader 5s forwards ease-in;
+}
+
+#or {
+  display: none;
+  width: 40vw;
+  height: 4vh;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  /* border-top: solid 7px black; */
+  /* padding-top: 2rem; */
+  /* background-color: rgba(0, 0, 0, 0); */
+
+  animation: fader 5s forwards ease-in;
+}
+
+#main {
+  position: relative;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+
+  width: 60vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#going-out {
+  position: relative;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+
+  width: 60vw;
+  height: 50vh;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#button-container {
+  position: absolute;
+  bottom: 5vh;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+
+button {
+  position: absolute;
+
+  opacity: 0.8;
+  border: 2px solid black;
+  cursor: pointer;
+
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+
+  width: 5rem;
+  height: 5rem;
+}
+
+#reset {
+  display: none;
+  background-color: rgb(241, 150, 54);
+  border-radius: 50%;
+  position: relative;
+  right: -40vw;
+}
+
+#lucky {
+  display: none;
+  position: relative;
+  bottom: 23vh;
+  width: 7vw;
+  height: 7vh;
+  background-color: rgba(0, 212, 255, 1);
+  animation: fader 5s forwards ease-in;
+  /*TODO: Make into star shape*/
+}
+
+@keyframes fader {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
